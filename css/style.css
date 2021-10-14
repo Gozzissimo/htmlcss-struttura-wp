@@ -10,8 +10,44 @@ html {
     font-size: 100%;
 }
 
+/* float */
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    margin: 15px auto;
+    /* background-color: lightcoral; (debug) */
+}
+
+header {
+    height: 5em;
+    background-color: #E579E6;
+    margin-bottom: 20px;
+    /* background-color: #8801FE; */
+}
+
+.banner-up {
+    height: 15em;
+    margin-bottom: 20px;
+    background-color: #E1D67A;
+}
+
+.main-content {
+    background-color: #ABCFE7;
+    margin bottom: 20px solid #0086FF;
+}
+
+.content-header {
+    height: 3em;
+}
+
+footer {
+    height: 2.5em;
+    margin-top: 5px;
+    background-color: #8801FE;
 }
