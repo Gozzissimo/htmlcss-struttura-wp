@@ -10,6 +10,10 @@ html {
     font-size: 100%;
 }
 
+body{
+    max-width: 1200px;
+}
+
 /* float */
 .clearfix::after {
     content: '';
@@ -19,53 +23,50 @@ html {
 
 .container {
     width: 80%;
-    height: 500px;
     margin: 15px auto;
     /* background-color: lightcoral; (debug) */
 }
 
 header {
     height: 5em;
-    background-color: #E579E6;
     margin-bottom: 20px;
-    /* background-color: #8801FE; */
+    background-color: #E579E6;
 }
 
-.banner-up {
+.jumbotron {
     height: 20em;
     margin-bottom: 20px;
     background-color: #E1D67A;
 }
 
 .main-content {
-    background-color: #ABCFE7;   
+    background-color: #0086FF;
+    margin-bottom: 20px;
 }
 
-.content-header {
+.main .content-header {
     height: 5em;
-    border-bottom: 20px solid #0086FF;
+    margin-bottom: 20px;
+    background-color: #ABCFE7
+}
+
+.main .main-content-main {
+    padding-bottom: 20px;
 }
 
 [class*="col-"] {
     float: left;
     height: 25em;
-    border-bottom: 20px solid #0086FF;
+    background-color: #ABCFE7;
 }
 
 .col-left, .col-right {
     width: 20%;
 }
 
-.col-left {
-    border-right: 15px solid #0086FF;
-}
-
-.col-right {
-    border-left: 15px solid #0086FF;
-}
-
 .col-center {
-    width: 60%;
+    width: calc(60% - 30px) ;
+    margin: 0 15px;
 }
 
 footer {
